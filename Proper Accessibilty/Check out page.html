@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <!-- Your checkout page content goes here -->
+      <section>
+        <h2>Your Cart</h2>
+         <img src="https://via.placeholder.com/150" alt="Product image" />
+      </section>
+
+     <!-- More checkout page content --> 
+      <section>
+        <h2>Payment Information</h2>
+        <form>
+            
+            <label for="card-name">Card Name<span aria-hidden="true" class="required">*</span></label>
+            <input
+                type="text"
+                id="card-name"
+                name="card-name"
+                placeholder="Card Name"
+                required
+            />
+
+           
+            <label for="card-number">Card Number<span aria-hidden="true" class="required">*</span></label>
+            <input
+                type="text"
+                id="card-number"
+                name="card-number"
+                placeholder="Card Number"
+                required
+                aria-describedby="card-number-help"
+            />
+             <p id="card-number-help">Please enter a valid card number.</p>
+        </form>
+      </section>
+</body>
+
+</html>

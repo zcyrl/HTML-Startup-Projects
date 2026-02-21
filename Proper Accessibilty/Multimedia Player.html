@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
+
+<body>
+    <main>
+        <!--Audio player with controls-->
+        <h1>Multimedia Player</h1>
+     
+        <!--section 1, Audio player-->
+        <section>
+            <h2>Audio Player</h2>
+            <audio controls aria-label="Audio player"> 
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    
+        <!--section 2, Video player-->
+        <section>
+            <h2>Video Player</h2>
+            <video controls aria-label="Video player" width="320" height="240">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+                <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+            </video>
+        </section>
+   
+        <!--section 3, Subtitles-->
+        <section>
+            <h2>subtitles</h2>
+            <p>Subtitles provide a text representation of the audio content in a video, making it accessible to a wider audience, including those who are deaf or hard of hearing.</p>
+        </section>
+
+</body>
+
+</html>
