@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessible Website</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+<header>
+  <h1>Accessible Learning Platform</h1>
+</header>
+
+<nav role="navigation" aria-label="Main Navigation">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>This platform is designed to be usable by everyone including users with disabilities.</p>
+
+  <img src="student.jpg" alt="A student studying on a laptop">
+</section>
+
+<section id="courses">
+  <h2>Courses</h2>
+
+  <div role="math" aria-label="x squared plus y squared equals 3">
+    x<sup>2</sup> + y<sup>2</sup> = 3
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"
+    aria-describedby="emailHelp" required>
+
+    <small id="emailHelp">
+      Enter a valid email address
+    </small>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Accessible Project</p>
+</footer>
+
+</body>
+</html>
